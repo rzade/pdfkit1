@@ -2,7 +2,7 @@ const fs = require('fs');
 const PDFDocument = require('pdfkit');
 const doc = new PDFDocument({ margin: 0, size: [620, 900] });
 
-doc.pipe(fs.createWriteStream('output.pdf'));
+doc.pipe(fs.createWriteStream('PT00000000.pdf'));
 
 doc.font('arial.ttf');
 
